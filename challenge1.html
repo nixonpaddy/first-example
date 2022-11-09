@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function greetMe(){
+                
+               const nameInput = document.getElementById("name").value;              
+               const currentYear = new Date().getFullYear();
+               const birthYear = document.getElementById("year").value;
+               const age = currentYear-birthYear;
+               const resultsDiv = document.getElementById("results").innerHTML = `Hello ${nameInput} you are probably ${age} years old`;
+
+               if(age!==21){
+                console.log("you are not 21")
+               }
+
+               if("21" ===age){
+                console.log("they are the same");
+               }
+
+
+
+               //console.log(currentYear);
+            }
+        </script>
+
+
+
+    </head>
+    <body>
+        <h1>Javascript Challenge 1</h1>
+        <p>
+        <label for="name">Name: </label>
+        <input id="name" type="text">
+        </p>
+
+        <p>
+            <label for="year">Year of birth: </label>
+            <input id="year" type="number">
+        </p>
+
+        <p>
+            <button onclick="greetMe()">Greet Me!</button>
+        </p>
+
+        <div id="results"></div>
+
+
+    </body>
+</html>

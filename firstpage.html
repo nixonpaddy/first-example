@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script>
+        function showInstructions(){
+            let instructions = document.getElementById("instructionsList");
+            if (instructions.style.display === "none") {
+                instructions.style.display = "block";
+                document.getElementById("instructions").innerHTML = "- Instructions";
+              } else {
+                instructions.style.display = "none";
+                document.getElementById("instructions").innerHTML = "+ Instructions";
+              }
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <h1 class ="mini-heading">Customer Form</h1>
+    <div class="container">
+
+    <br>
+
+    <div id="instructions" onclick="showInstructions()"> &gt; Instructions</div>
+    <div id="instructionsList" style="display:none">
+        <ol>
+            <li>Select your favorite car</li>
+            <li>Submit you selection</li>
+        </ol>
+    </div>
+    <br>
+
+    
+
+
+    <form action="" method="post">
+
+        <!-- <div class="row">
+       <div class="col-md-4"><div class="col-md-4"><label for="custName">Name: </label>
+        
+       <input type="text" id="custName"name="custName" class="col-md-4">
+       </div> -->
+
+       <div class="row">
+        <div class="col-md-4"><label for="custName" >Name: </label></div>
+        <div class="col-md-4"><input type="text" id="custName"name="custName"></div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+        <div class="col-md-4"><label for="custAddress" >Address: </label></div>
+        <div class="col-md-4"><input type="text" id="custAddress"name="custAddress"></div>
+        </div>
+
+        <br><br>
+
+
+        <div class="row">
+
+        <label for="favoriteCar" class="col-md-4">What is your favorite car brand?</label><br><br>
+        
+        <div class="col-md-4"><select name="favoriteCar" id="favoriteCar"></div>
+            <option value="" disabled selected>Please Choose</option>
+            <option value="volkswagen" id="customer-name">Volkswagen</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="BMW">BMW</option>
+        </select>
+    </div>
+
+        <button type="submit">SEND!</button>
+        </form>
+        </div>
+
+        
+    </form>
+
+ 
+
+</body>
+
+
+
+
+
+
+</html>

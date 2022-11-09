@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const pizza = {
+                base:"thin",
+                toppings:["olives", "pineapple"]
+            }
+            pizza.size="12";
+
+            console.log(pizza);
+
+            const pizza2 = {...pizza, extraHot:true, size:"8"}
+            console.log(pizza2);
+
+            <!-- const colors = ["red", "green", "blue"]
+            for(let counter = 0; counter<colors.length; i++){
+                console.log[colors]
+            } -->
+
+            
+        </script>
+
+
+
+    </head>
+    <body>
+        <h1>Javascript Challenge 1</h1>
+        <p>
+        <label for="name">Name: </label>
+        <input id="name" type="text">
+        </p>
+
+        <p>
+            <label for="year">Year of birth: </label>
+            <input id="year" type="number">
+        </p>
+
+        <p>
+            <button onclick="greetMe()">Greet Me!</button>
+        </p>
+
+        <div id="results"></div>
+
+
+    </body>
+</html>
